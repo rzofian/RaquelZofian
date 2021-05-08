@@ -44,7 +44,7 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;   
+  box-sizing: content-box;   
 }
 
 html {
@@ -10030,15 +10030,15 @@ p.lead {
     position: fixed;
     top: 0;
     left: 0;
-    display: inline;    /* era flex*/
+    display: flex;    /* era flex*/
     flex-direction: column;
-    width: 17rem;
+    width: 12rem;
     height: 100vh
   }
   #sideNav .navbar-brand {
     display: flex;
-    margin:auto auto 0;
-    padding: 3.2rem;
+    margin:initial;         /*auto auto 0*/
+    padding: 2rem;
   }
   #sideNav .navbar-brand .img-profile {
     max-width: 10rem;
