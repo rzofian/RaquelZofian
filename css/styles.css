@@ -22,7 +22,7 @@
   --teal: #20c997;
   --cyan: #17a2b8;
   --white: #fff;
-  --gray: #6c757d;
+  --gray: #fdfeff;
   --gray-dark: #343a40;
   --primary: #bd5d38;
   --secondary: #6c757d;
@@ -44,7 +44,7 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+  box-sizing: content-box;   
 }
 
 html {
@@ -61,12 +61,12 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 body {
   margin: 0;
   font-family: "Muli", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 400;
   line-height: 1.5;
   color: #212529;
   text-align: left;
-  background-color: #fff;
+  background-color:#fff;
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -7353,7 +7353,7 @@ button.bg-dark:focus {
   top: 0;
   right: 0;
   left: 0;
-  z-index: 1030;
+  z-index: 1030 ;
 }
 
 .fixed-bottom {
@@ -10030,20 +10030,20 @@ p.lead {
     position: fixed;
     top: 0;
     left: 0;
-    display: flex;
+    display: inline;    /* era flex*/
     flex-direction: column;
     width: 17rem;
-    height: 100vh;
+    height: 100vh
   }
   #sideNav .navbar-brand {
     display: flex;
-    margin: auto auto 0;
-    padding: 0.5rem;
+    margin:auto auto 0;
+    padding: 3.2rem;
   }
   #sideNav .navbar-brand .img-profile {
     max-width: 10rem;
     max-height: 10rem;
-    border: 0.1rem solid #0f0f0f;
+    border: 0.2rem solid #0f0f0f;
   }
   #sideNav .navbar-collapse {
     display: flex;
@@ -10101,7 +10101,7 @@ section.resume-section .resume-section-content {
 
 @media (min-width: 768px) {
   section.resume-section {
-    min-height: 100vh;
+  
   }
 }
 @media (min-width: 992px) {
