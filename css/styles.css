@@ -10032,7 +10032,7 @@ p.lead {
     left: 0;
     display: flex;    /* era flex*/
     flex-direction: column;
-    width: 12rem;
+    width: 15rem;
     height: 100vh
   }
   #sideNav .navbar-brand {
